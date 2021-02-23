@@ -2,8 +2,8 @@ var dog,happyDog, database,foodS, foodStock;
 
 function preload()
 {
-  Dog = loadImage('images/dogImg.png');
-  Dog2 = loadImage('images/dogImg1.png');
+  Dog = loadImage('images/Dog.png');
+  doghappy = loadImage('images/happydog.png');
 }
 
 function setup() {
@@ -25,7 +25,7 @@ function draw() {
  
  if(keyWentDown(UP_ARROW)){
    writeStock(foodS);
-   dog.addImage(Dog1);
+   dog.addImage(doghappy);
  }
 
  
@@ -52,6 +52,11 @@ function writeStock(x){
     Food:x
   })
 }
+
+
+
+
+
 
 
 
